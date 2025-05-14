@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+  }
+  
+  /* Card styling */
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+  }
+  
+  /* Card headers */
+  .card-header {
+    background-color: #343a40;
+    color: #ffffff;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Table styling */
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+  
+  /* Accordion */
+  .accordion-button {
+    font-weight: 500;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+  .btn-success {
+    background-color: #198754;
+    border-color: #198754;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    min-width: 180px;
+  }
+  
+  /* Feedback textarea */
+  textarea:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  }
+  
+  /* Chart container padding */
+  canvas {
+    max-width: 100%;
+  }
+  
+  /* Responsive spacing */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 900px;
+    }
+  }
+  
+
+  .accordion-button {
+    font-size: 0.95rem;
+  }
+  .accordion-body {
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+  }
+  .badge {
+    font-size: 0.8rem;
+  }
+
+  .history-slider {
+    position: fixed;
+    top: 70px; /* adjust based on navbar height */
+    right: -400px;
+    width: 350px;
+    height: calc(100% - 70px);
+    background-color: #ffffff;
+    z-index: 1050;
+    transition: right 0.3s ease;
+    border-left: 1px solid #dee2e6;
+  }
+  
+  .history-slider.show {
+    right: 0;
+  }
+  

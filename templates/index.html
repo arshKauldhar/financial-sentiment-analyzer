@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FinSentiment - Empower Your Financial Decisions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Font: Poppins for clean, modern text :contentReference[oaicite:12]{index=12} -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <!-- Flash messaging (retained for login/register feedback) -->
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="flash-messages">
+        {% for message in messages %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand"><a href="#">FinSentiment</a></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="/login" class="btn login-btn">Login</a>
+        <a href="/register" class="btn register-btn">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Analyze Market Sentiment in Real-Time</h1>
+      <p>Make smarter financial decisions with AI-driven insights.</p>
+      <a href="/register" class="btn btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About FinSentiment</h2>
+    <div class="cards-container">
+      <div class="card">
+        <h3>Advanced Analytics</h3>
+        <p>We use cutting-edge sentiment analysis to process financial news and social media in real time.</p>
+      </div>
+      <div class="card">
+        <h3>User-Friendly Dashboard</h3>
+        <p>Our intuitive interface lets you track trends and insights at a glance.</p>
+      </div>
+      <div class="card">
+        <h3>Trusted Insights</h3>
+        <p>Deep data analysis helps you invest with confidence, backed by transparent metrics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- (Optional Footer or additional sections could go here) -->
+</body>
+</html>
