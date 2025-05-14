@@ -1,4 +1,4 @@
-# Financial News for Sentiment Analysis
+# Sentiment Analysis for Financial News
 This project focuses on analyzing financial news articles to determine the sentiment (positive, negative, or neutral) expressed within them. The goal is to help investors and analysts make informed decisions by understanding market sentiment through news content.
 
 ## Features
