@@ -1,16 +1,52 @@
 # Sentiment Analysis for Financial News
-This project focuses on analyzing financial news articles to determine the sentiment (positive, negative, or neutral) expressed within them. The goal is to help investors and analysts make informed decisions by understanding market sentiment through news content.
+This project analyzes financial news articles to determine sentiment (positive, negative, or neutral), helping users and investors gain insight into market trends. It includes a web-based interface for user interaction, authentication, and feedback.
 
-## Features
-Preprocessing of financial news text (tokenization, stopword removal, etc.)
+🔍 Features
+💬 Sentiment Analysis
+Analyze financial news headlines or articles
 
-Sentiment classification using machine learning or NLP techniques
+Classify sentiment as Positive, Negative, or Neutral
 
-Visualizations for sentiment distribution
+Visualize sentiment distribution with charts
 
-Dataset support for custom or public financial news sources
+🌐 Frontend Functionalities
+User Authentication:
 
-## Tech Stack
-Language: Python
+Register new users
 
-Libraries: NLTK, Scikit-learn, Pandas, Matplotlib, Seaborn (or others as used)
+Login/Logout functionality
+
+Feedback Submission:
+
+Users can submit feedback on predictions
+
+🗄️ Backend & Database
+Connected to PostgreSQL for storing:
+
+User data (login credentials)
+
+Feedback records
+
+Optional sentiment history
+
+🛠️ Tech Stack
+Frontend
+HTML5, CSS3, JavaScript
+
+Bootstrap for responsive design
+
+Flask Templates (Jinja2)
+
+Backend
+Python
+
+Flask web framework
+
+NLTK / Scikit-learn for sentiment analysis
+
+Database
+PostgreSQL via SQLAlchemy ORM
+
+Visualization
+Matplotlib, Seaborn
+
